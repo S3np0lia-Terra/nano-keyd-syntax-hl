@@ -20,7 +20,7 @@ color red "^[[:space:]]*\*"
 # Key area (the part to the left of '=')
 # Key-value pairs without spaces around '=' are marked invalid
 # Rules allowing no spaces are included but commented out
-icolor orange "[[:space:]]*[a-zA-Z0-9._-]+[[:space:]]="
+icolor orange "[[:space:]]*.+[[:space:]]="
 # icolor orange "[[:space:]]*[a-zA-Z0-9._-]+[[:space:]]?="
 
 # Values (the part to the right of '=')
