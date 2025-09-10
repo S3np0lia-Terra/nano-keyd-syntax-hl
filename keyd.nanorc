@@ -37,19 +37,21 @@ color ocher "[[:space:]]*\([^)]*([[:space:]].*)?\)+"
 color lightyellow "[[:space:]]*(['\"].*['\"])"
 
 # Numeric digits
-color sea "\b[0-9]+(ms|s|us)?\b"
+color sea "\b[0-9]+(ms|s|us|pt|px)?\b%?"
 
 # Floating-point numbers (not in use in keyd)
-color lagoon "\b[0-9]+\.[0-9]+(ms|s|us)?\b"
+color lagoon "\b[0-9]+\.[0-9]+(ms|s|us|pt|px)?\b%?"
 
 # Function names
 color brick "(overloadt2|overloadt|overloadi|overload|oneshotm|oneshot|layerm|layer|swapm|swap|togglem|toggle|clearm|clear|setlayout|timeout|macro2|macro|command|noop|lettermod)"
 
 # Macro and modifiers
+# Comment out these two lines for better compatibility with other .conf and .ini files
 color lime "\b([A-Z]-[A-Za-z0-9_]+|[A-Za-z0-9_]+(-[A-Za-z0-9_]+)+)\b"
 color lime "\b([A-Za-z0-9_]+(\+[A-Za-z0-9_]+)+)\b"
 
 # Actual device ids
+# Comment out these two lines for better compatibility with other .conf and .ini files
 color yellow "\b[^:[:space:]]+:[^:[:space:]]+(:[^:[:space:]]+)?\b"
 color red "-+[^:[:space:]]+:[^:[:space:]]+(:[^:[:space:]]+)?\b"
 
@@ -58,6 +60,7 @@ color lime "^[[:space:]]*\[[^]]*\]"
 color teal "^[[:space:]]*\[([A-Za-z0-9]+((:|\+)[A-Za-z0-9]+)+)+\]"
 
 # Global settings, e.g., `macro_timeout = 600`
+# Comment out these two lines for better compatibility with other .conf and .ini files
 color lagoon "^[[:space:]]*\[global\]"
 color lagoon "[[:space:]]*[a-z0-9]+_+[a-z0-9]+.*[[:space:]]+="
 
